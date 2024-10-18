@@ -1,0 +1,30 @@
+.formItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 0;
+  padding-left: 12px;
+
+  &:hover {
+    border-color: #00a85f;
+  }
+
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+
+  .formLabel {
+    flex-shrink: 0;
+    min-width: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #989898;
+  }
+
+  .formInfo {
+    flex: 1;
+    overflow: hidden;
+  }
+}

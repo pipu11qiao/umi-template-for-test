@@ -1,0 +1,14 @@
+{
+  "extends": "./src/.umi/tsconfig.json",
+  "exclude": [
+    "./src/services/model",
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "**/*.test.ts",
+    "src/.umi-test",
+    "src/.umi-production",
+    "src/components/ProcessDetail"
+  ]
+}

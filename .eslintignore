@@ -1,0 +1,8 @@
+src/services/model/*
+
+public/*
+dist
+src/.umi
+src/.umi-test
+src/.umi-production
+src/components/ProcessDetail

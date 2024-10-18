@@ -1,0 +1,168 @@
+.modalTitle {
+  display: flex;
+  align-items: center;
+
+  .titleName {
+    padding-left: 18px;
+    font-size: 16px;
+    color: #212121;
+  }
+}
+
+:global {
+  .ant-btn.ant-btn-text:not(:disabled):hover {
+    background-color: transparent;
+  }
+}
+
+.rightHeader {
+  position: relative;
+  padding: 4px 0;
+
+  .rightHeaderInner {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 12px;
+    height: 32px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 4px 8px 4px 4px;
+
+    .img {
+      display: block;
+      background-image: url('https://p8.dfzxvip.com/9ba4639d.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: 6px;
+    }
+
+    .username {
+      line-height: 23px;
+      color: #212121;
+    }
+
+    .line {
+      margin: 0 12px;
+      width: 1px;
+      height: 12px;
+      background: #e8e8e8;
+    }
+
+    .logoutContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #414141;
+      margin-left: 4px;
+    }
+
+    .permissionCard {
+      z-index: 999; // 层级不可高于推出弹窗mask的1000
+      position: absolute;
+      background-color: #fff;
+      box-sizing: border-box;
+      width: 212px;
+      height: 135px;
+      right: 0;
+      top: 40px;
+      padding: 16px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px 0 #00000029;
+
+      .top {
+        display: flex;
+        gap: 16;
+
+        .img {
+          display: block;
+          background-image: url('https://p8.dfzxvip.com/9ba4639d.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+          width: 48px;
+          height: 48px;
+          border-radius: 6px;
+          margin-right: 12px;
+          flex-shrink: 0;
+        }
+
+        .userInfo {
+          margin-top: 3px;
+          margin-bottom: 3px;
+          height: 22px;
+          font-family: 'PingFang SC';
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0;
+          text-align: left;
+          color: #212121;
+
+          .mr4 {
+            margin-right: 4px;
+          }
+
+          .departmentname {
+            font-family: 'PingFang HK';
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0;
+            text-align: left;
+            color: #989898;
+            width: 130px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .divider {
+        height: 1px;
+        background-color: #f6f6f6;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        line-height: 22px;
+
+        .text {
+          width: 50%;
+          text-align: center;
+          color: #212121;
+          font-family: 'PingFang SC';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+
+          &:hover {
+            color: #00a85f;
+          }
+
+          cursor: pointer;
+
+          &.logoutText {
+            // 默认
+            color: #ff4d00;
+
+            &:hover {
+              // 悬停
+              color: #ff9152;
+              // 按下#D93A00
+            }
+          }
+        }
+      }
+    }
+  }
+}

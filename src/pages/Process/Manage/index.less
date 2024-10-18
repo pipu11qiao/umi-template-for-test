@@ -1,0 +1,174 @@
+.btnGroup {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content {
+  position: relative;
+  margin-top: -4px;
+
+  .hasDraft {
+    color: #ff4d00;
+  }
+
+  .spin {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.actionItem {
+  cursor: pointer;
+  color: #00a85f;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.wrapWaringClass {
+  :global(.ant-modal-confirm-title) {
+    flex: auto !important;
+    margin-left: 16px;
+  }
+
+  :global(.ant-modal-confirm-content) {
+    color: #696969;
+    margin-inline-start: 0;
+    margin-left: 40px;
+  }
+
+  :global(.ant-modal-confirm-btns) {
+    margin-top: 24px;
+  }
+}
+
+.wrapSuccessClass {
+  :global(.ant-modal-confirm-title) {
+    margin-left: 16px;
+    flex: auto !important;
+  }
+
+  :global(.ant-modal-confirm-content) {
+    margin-block-start: 0 !important;
+  }
+
+  :global(.ant-modal-confirm-btns) {
+    margin-top: 24px;
+  }
+}
+
+.logArea {
+  overflow: hidden;
+  padding-top: 8px 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 15%);
+
+  :global(.ant-popover-content) {
+    padding: 0;
+  }
+
+  :global(.ant-popover-inner) {
+    background: transparent;
+    box-shadow: none;
+    padding: 8px 0 4px;
+  }
+
+  .timeArea {
+    max-height: 200px;
+    box-sizing: border-box;
+    padding: 4px 12px;
+    overflow: auto;
+
+    :global(.ant-timeline-item-tail) {
+      border-inline-start-style: dotted;
+    }
+
+    :global(.ant-timeline-item-last) {
+      padding-bottom: 0;
+    }
+
+    :global(.ant-timeline-item-content) {
+      min-height: auto;
+      margin-inline-start: 17px;
+    }
+  }
+
+  .logInfo {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 22px;
+    color: #212121;
+
+    .logVersion {
+      width: 44px;
+    }
+
+    .versionDetail {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+  }
+}
+
+.adminPopover {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 75%);
+
+  :global(.ant-popover-arrow) {
+    &::before {
+      background: rgba(0, 0, 0, 75%);
+    }
+  }
+
+  :global(.ant-popover-inner) {
+    background: transparent;
+    padding: 8px 12px;
+  }
+
+  .admin {
+    max-width: 216px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.confirmContentWrap {
+  :global(.ant-modal-confirm-body) {
+    display: block;
+  }
+
+  .confirmContent {
+    width: 100%;
+  }
+
+  .confirmTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #212121;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+}
